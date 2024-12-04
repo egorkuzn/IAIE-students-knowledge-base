@@ -1,13 +1,15 @@
 import React from 'react';
-import './styles/App.scss';
+import './styles/style.scss';
 import {Navbar} from "./view/Navbar";
 import {Body} from "./view/Body";
 import {Footer} from "./view/Footer";
 
 function App() {
+    let path = window.location.pathname
+
     return (
         <div className="App">
-            <Navbar/>
+            <Navbar currentPath = {path}/>
             <Body/>
             <Footer/>
         </div>
