@@ -8,13 +8,13 @@ import {FooterRow} from "./FooterRow";
 
 export function Footer (props: any) {
     return (
-        <div>
-            <FooterRow name = "Главная" rowData ={ MainFooterRow() }/>
-            <FooterRow name = "Дипломные работы и диссертации" rowData = { WorksFooterRow() }/>
-            <FooterRow name = "Документация и инструкции" rowData = { DocsFooterRow() }/>
-            <FooterRow name = "Проекты" rowData = { ProjectsFooterRow() }/>
-            <FooterRow name = "Публикации" rowData = { PublicationsFooterRow() }/>
-            <FooterRow name = "Видео" rowData = { VideoFooterRow() }/>
+        <div className="footer">
+            <FooterRow name = "Главная" rowData ={ new MainFooterRow() }/>
+            <FooterRow name = "Дипломные работы и диссертации" rowData = { new WorksFooterRow() }/>
+            <FooterRow name = "Документация и инструкции" rowData = { new DocsFooterRow() }/>
+            <FooterRow name = "Проекты" rowData = { new ProjectsFooterRow() }/>
+            <FooterRow name = "Публикации" rowData = { new PublicationsFooterRow() }/>
+            <FooterRow name = "Видео" rowData = { new VideoFooterRow() }/>
         </div>
     )
 }
