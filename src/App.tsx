@@ -1,8 +1,8 @@
 import React from 'react';
-import './styles/style.scss';
+import './styles/Navbar.scss';
 import {Navbar} from './view/navbar/Navbar';
 import {Body} from './view/Body';
-import {Footer} from './view/Footer';
+import {Footer} from './view/footer/Footer';
 
 function App() {
     let path = window.location.pathname

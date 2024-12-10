@@ -17,7 +17,7 @@ export class Navbar extends Component<NavbarProps> {
                 <div className="nav-elem-box">
                     <NavbarElement path="/home" title="Главная" currentPath={this.props.currentPath}/>
                     <NavbarElement path="/works" title="Дипломные работы и диссертации" currentPath={this.props.currentPath}/>
-                    <NavbarElement path="/doc" title="Документация и инструкции" currentPath={this.props.currentPath}/>
+                    <NavbarElement path="/docs" title="Документация и инструкции" currentPath={this.props.currentPath}/>
                     <NavbarElement path="/projects" title="Проекты" currentPath={this.props.currentPath}/>
                     <NavbarElement path="/publications" title="Публикации" currentPath={this.props.currentPath}/>
                     <NavbarElement path="/video" title="Видео" currentPath={this.props.currentPath}/>
