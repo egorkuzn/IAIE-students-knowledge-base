@@ -1,3 +1,32 @@
-footer {
+@import "Navbar";
 
+$light-blue: #9D9DD2;
+
+footer {
+  background-color: $light-blue;
+  color: $app-blue;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto;
+  padding: 16px 32px;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer .row {
+  display: flow;
+  width: 100%;
+}
+
+footer ul {
+  list-style: none;
+  text-align: left;
+}
+
+footer .row .header {
+  font-weight: bold;
+  padding-bottom: 16px;
 }

@@ -1,8 +1,10 @@
 import React from 'react';
 import './styles/Navbar.scss';
+import './styles/Footer.scss';
+import './styles/Main.scss';
 import {Navbar} from './view/navbar/Navbar';
-import {Body} from './view/Body';
-import {Footer} from './view/footer/Footer';
+import {Main} from './view/Main';
+import {Footer} from "./view/footer/Footer";
 
 function App() {
     let path = window.location.pathname
@@ -10,7 +12,7 @@ function App() {
     return (
         <div className="App">
             <Navbar currentPath = {path}/>
-            <Body/>
+            <Main/>
             <Footer/>
         </div>
     );
