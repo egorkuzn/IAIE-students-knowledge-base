@@ -1,6 +1,6 @@
 import React, {Component, ReactElement} from "react";
-import {NavbarElementProp} from "../../model/navbar/NavbarElementProp";
-import {NavbarElementState} from "../../model/navbar/NavbarElementState";
+import {NavbarElementProp} from "../../../model/navbar/NavbarElementProp";
+import {NavbarElementState} from "../../../model/navbar/NavbarElementState";
 
 /**
  * Компонент

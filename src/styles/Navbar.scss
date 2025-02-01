@@ -4,8 +4,10 @@ nav {
     display: flex;
     background-color: $app-blue;
     align-items: stretch;
-    padding: 0 32px;
-    height: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 3em;
+    //width: 100%;
 }
 
 nav .nav-elem-box {
@@ -14,11 +16,13 @@ nav .nav-elem-box {
     grid-auto-flow: column;
     grid-template-columns: auto;
     width: 100%;
-    padding: 0 0 12px 0;
+    padding: 1em 0 0.25em 0;
 }
 
 nav img {
-    padding: 4px 4px;
+    padding: 0.5em 0.5em;
+    height: 2em;
+    width: 2em;
 }
 
 nav a {
@@ -28,14 +32,17 @@ nav a {
 
 nav .nav-elem {
     @extend a;
-    display: flex;
+    display: flow;
     justify-self: stretch;
     justify-content: space-around;
     justify-items: stretch;
     align-items: center;
-    border-bottom: 4px;
+    border-bottom: 0.125em;
     border-bottom-style: solid;
-    padding: 24px 0 0 0;
+    width: 100%;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 nav .nav-border-enable {

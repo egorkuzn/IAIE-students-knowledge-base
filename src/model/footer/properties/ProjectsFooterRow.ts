@@ -10,6 +10,18 @@ export class ProjectsFooterRow implements FooterRawData {
         {
             name: "Язык Post",
             link: "/projects/post"
+        },
+        {
+            name: "Проект RIDE/Theia",
+            link: "/projects/reflex"
+        },
+        {
+            name: "Язык IndustrialC",
+            link: "/projects/post"
+        },
+        {
+            name: "EDTL",
+            link: "/projects/post"
         }
     ]
 }

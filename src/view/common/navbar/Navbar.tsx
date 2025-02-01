@@ -1,4 +1,4 @@
-import IAIELogo from '../../images/iaie-icon.png'
+import IAIELogo from '../../../images/iaie-icon.png'
 import React, {Component, ReactElement} from "react"
 import {NavbarElement} from "./NavbarElement";
 
