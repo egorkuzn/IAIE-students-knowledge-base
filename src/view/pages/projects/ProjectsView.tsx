@@ -1,4 +1,4 @@
-import App from "../../App";
+import App from "../../../App";
 
 export function ProjectsView(props: any) {
     return (App(page()))

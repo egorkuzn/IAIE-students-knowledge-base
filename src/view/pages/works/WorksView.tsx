@@ -1,4 +1,4 @@
-import App from "../../App";
+import App from "../../../App";
 
 export function WorksView(props: any) {
     return (App(page()))

@@ -1,16 +1,16 @@
 import { createBrowserRouter } from "react-router";
 import App from "../App";
-import {WorksView} from "../view/works/WorksView";
-import {ProjectsView} from "../view/projects/ProjectsView";
-import {VideoView} from "../view/video/VideoView";
-import {PublicationsView} from "../view/publications/PublicationsView";
-import {DocsView} from "../view/docs/DocsView";
-import {Main} from "../view/common/Main";
+import {WorksView} from "../view/pages/works/WorksView";
+import {ProjectsView} from "../view/pages/projects/ProjectsView";
+import {VideoView} from "../view/pages/video/VideoView";
+import {PublicationsView} from "../view/pages/publications/PublicationsView";
+import {DocsView} from "../view/pages/docs/DocsView";
+import {Home} from "../view/pages/home/Home";
 
 export const router = createBrowserRouter([
     {
         path: "/home",
-        Component: Main
+        Component: Home
     },
     {
         path: "/works",

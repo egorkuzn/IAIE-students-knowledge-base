@@ -1,7 +1,7 @@
 import React, {JSX} from 'react';
-import './styles/Navbar.scss';
-import './styles/Footer.scss';
-import './styles/Main.scss';
+import './styles/common/Navbar.scss';
+import './styles/common/Footer.scss';
+import './styles/common/Main.scss';
 import {Navbar} from './view/common/navbar/Navbar';
 import {Footer} from "./view/common/footer/Footer";
 
