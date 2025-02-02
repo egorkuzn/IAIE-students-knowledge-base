@@ -7,11 +7,9 @@ import {Main} from './view/common/Main';
 import {Footer} from "./view/common/footer/Footer";
 
 function App() {
-    let path = window.location.pathname
-
     return (
         <div className="App">
-            <Navbar currentPath = {path}/>
+            <Navbar/>
             <Main/>
             <Footer/>
         </div>
