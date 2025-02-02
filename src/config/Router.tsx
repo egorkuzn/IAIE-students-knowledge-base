@@ -5,11 +5,12 @@ import {ProjectsView} from "../view/projects/ProjectsView";
 import {VideoView} from "../view/video/VideoView";
 import {PublicationsView} from "../view/publications/PublicationsView";
 import {DocsView} from "../view/docs/DocsView";
+import {Main} from "../view/common/Main";
 
 export const router = createBrowserRouter([
     {
         path: "/home",
-        Component: App
+        Component: Main
     },
     {
         path: "/works",

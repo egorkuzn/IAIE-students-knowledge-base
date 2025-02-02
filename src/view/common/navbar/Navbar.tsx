@@ -8,14 +8,9 @@ import {NavbarState} from "../../../model/navbar/NavbarState";
  */
 export class Navbar extends Component<{}, NavbarState> {
     state: NavbarState =  {
-        active: "/home",
-        pressed: "/home",
-        entered: "/home"
-    }
-
-    setActive(entered: string, pressed: string) {
-        if (entered !== "") return entered
-        else return pressed
+        active: window.location.pathname,
+        pressed: window.location.pathname,
+        entered: ""
     }
 
     map = new Map<string, string>(
