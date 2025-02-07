@@ -1,27 +1,37 @@
 import React, {Component, ReactElement} from "react";
 import {NavbarElementProp} from "../../../model/navbar/NavbarElementProp";
-import {NavbarElementState} from "../../../model/navbar/NavbarElementState";
 
 /**
  * Компонент
  */
-export class NavbarElement extends Component<NavbarElementProp, NavbarElementState> {
-    state: NavbarElementState = {
-        activeElement: this.props.currentPath
-    }
-
+export class NavbarElement extends Component<NavbarElementProp> {
     getStyle(): string {
-        return (this.state.activeElement === this.props.path) ? "nav-border-enable" : "nav-border-disable"
+        return (this.props.navbarStateValue.active === this.props.path) ? "nav-border-enable" : "nav-border-disable"
     }
 
     onComponentEnter() {
-        let newState: NavbarElementState = {activeElement: this.props.path}
-        this.setState(newState)
+        this.props.onChange(
+            {
+                active: this.props.path,
+                pressed: this.props.navbarStateValue.pressed,
+                entered: this.props.path
+            }
+        )
     }
 
     onComponentOut() {
-        let newState: NavbarElementState = {activeElement: this.props.currentPath}
-        this.setState(newState)
+        let entered = this.props.navbarStateValue.entered
+        if (this.props.path === this.props.navbarStateValue.entered) entered = ""
+        let active = this.props.navbarStateValue.active
+        if (entered === "") active = this.props.navbarStateValue.pressed
+
+        this.props.onChange(
+            {
+                active: active,
+                pressed: this.props.navbarStateValue.pressed,
+                entered: entered
+            }
+        )
     }
 
     render(): ReactElement {

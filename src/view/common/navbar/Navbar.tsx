@@ -1,26 +1,38 @@
 import IAIELogo from '../../../images/iaie-icon.png'
 import React, {Component, ReactElement} from "react"
 import {NavbarElement} from "./NavbarElement";
-
-interface NavbarProps {
-    currentPath: string
-}
+import {NavbarState} from "../../../model/navbar/NavbarState";
 
 /**
  * Шапка навигации
  */
-export class Navbar extends Component<NavbarProps> {
+export class Navbar extends Component<{}, NavbarState> {
+    state: NavbarState =  {
+        active: window.location.pathname,
+        pressed: window.location.pathname,
+        entered: ""
+    }
+
+    map = new Map<string, string>(
+        [["/home", "Главная"],
+            ["/works", "Дипломные работы и диссертации"],
+            ["/docs", "Документация и инструкции"],
+            ["/projects", "Проекты"],
+            ["/publications", "Публикации"],
+            ["/video", "Видео"]]
+    )
+
     render(): ReactElement {
         return (
             <nav>
                 <a href="https://www.iae.nsk.su/ru/"> <img src={IAIELogo} alt="IAIE logo"/></a>
                 <div className="nav-elem-box">
-                    <NavbarElement path="/home" title="Главная" currentPath={this.props.currentPath}/>
-                    <NavbarElement path="/works" title="Дипломные работы и диссертации" currentPath={this.props.currentPath}/>
-                    <NavbarElement path="/docs" title="Документация и инструкции" currentPath={this.props.currentPath}/>
-                    <NavbarElement path="/projects" title="Проекты" currentPath={this.props.currentPath}/>
-                    <NavbarElement path="/publications" title="Публикации" currentPath={this.props.currentPath}/>
-                    <NavbarElement path="/video" title="Видео" currentPath={this.props.currentPath}/>
+                    {this.map.entries().map(
+                        (entry) => <NavbarElement path={entry[0]}
+                                                  title={entry[1]}
+                                                  navbarStateValue={this.state}
+                                                  onChange={(newSate) => this.setState(newSate)}/>
+                    )}
                 </div>
             </nav>
         )
