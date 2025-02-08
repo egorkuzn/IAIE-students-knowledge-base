@@ -1,0 +1,27 @@
+.works-style {
+  color: black;
+}
+
+.works-page {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.works-class {
+
+}
+
+.work {
+  display: grid;
+  row-gap: 0;
+}
+
+.work-authors-titles {
+  display: flex;
+  column-gap: 0.25em;
+}
+
+.work-published {
+  font-weight: lighter;
+  margin-top: 0;
+}
