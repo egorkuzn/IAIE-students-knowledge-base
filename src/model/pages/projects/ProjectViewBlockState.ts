@@ -1,0 +1,3 @@
+interface ProjectViewBlockState {
+    id: string
+}

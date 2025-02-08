@@ -1,4 +1,5 @@
 import App from "../../../App";
+import {ProjectsViewBlock} from "./ProjectsViewBlock";
 
 export function ProjectsView(props: any) {
     return (App(page()))
@@ -7,7 +8,8 @@ export function ProjectsView(props: any) {
 function page() {
     return (
         <main>
-            <h1>Project View</h1>
+            <h1>Проекты</h1>
+            <ProjectsViewBlock/>
         </main>
     )
 }
