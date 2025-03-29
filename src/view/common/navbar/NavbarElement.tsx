@@ -1,5 +1,6 @@
 import React, {Component, ReactElement} from "react";
 import {NavbarElementProp} from "../../../model/navbar/NavbarElementProp";
+import {router} from "../../../config/Router";
 
 /**
  * Компонент
@@ -40,7 +41,7 @@ export class NavbarElement extends Component<NavbarElementProp> {
         return (
             <a
                 className={style}
-                href={this.props.path}
+                href={router.basename + this.props.path}
                 onMouseEnter={() => this.onComponentEnter()}
                 onMouseOut={() => this.onComponentOut()}
             >

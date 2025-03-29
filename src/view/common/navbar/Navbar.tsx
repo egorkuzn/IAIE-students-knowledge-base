@@ -14,12 +14,12 @@ export class Navbar extends Component<{}, NavbarState> {
     }
 
     map = new Map<string, string>(
-        [["/home", "Главная"],
-            ["/works", "Дипломные работы и диссертации"],
-            ["/docs", "Документация и инструкции"],
-            ["/projects", "Проекты"],
-            ["/publications", "Публикации"],
-            ["/video", "Видео"]]
+        [["#home", "Главная"],
+            ["#works", "Дипломные работы и диссертации"],
+            ["#docs", "Документация и инструкции"],
+            ["#projects", "Проекты"],
+            ["#publications", "Публикации"],
+            ["#video", "Видео"]]
     )
 
     render(): ReactElement {
