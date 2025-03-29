@@ -8,8 +8,11 @@ export function ProjectsView(props: any) {
 function page() {
     return (
         <main>
-            <h1>Проекты</h1>
-            <ProjectsViewBlock/>
+            <div className="projects">
+                <h1>Проекты</h1>
+                <ProjectsViewBlock/>
+            </div>
         </main>
     )
 }
+
