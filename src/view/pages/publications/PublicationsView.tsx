@@ -1,6 +1,6 @@
 import App from "../../../App";
 import '../../../styles/pages/Publications.scss';
-import {Publications} from "../../../data/pages/publications/PublicationsClassProperties";
+import {PUBLICATIONS_DATA} from "../../../data/pages/publications/PublicationsClassProperties";
 import {JSX} from "react";
 
 export function PublicationsView(props: any) {
@@ -24,7 +24,7 @@ function page() {
             <div className="publications-page">
                 <h1>Публикации</h1>
                 {
-                    Publications.map(publications => {
+                    PUBLICATIONS_DATA.map(publications => {
                         return (
                             <div>
                                 <h2> {publications.year} </h2>
