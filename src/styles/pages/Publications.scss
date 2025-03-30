@@ -1,0 +1,30 @@
+
+.publications-page {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.publications-page h1, h2{
+  color: black;
+}
+
+.publications-page a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.publication {
+  display: grid;
+  row-gap: 0;
+}
+
+.publication-authors-titles {
+  display: flex;
+  width: fit-content;
+  column-gap: 0.25em;
+}
+
+.publication-published {
+  font-weight: lighter;
+  margin-top: 0;
+}

@@ -1,43 +1,43 @@
-import {FooterRawData} from "../FooterRawData";
-import {FooterRawDataElement} from "../FooterRawDataElement";
+import {FooterRawData} from "../../model/footer/FooterRawData";
+import {FooterRawDataElement} from "../../model/footer/FooterRawDataElement";
 
 export class WorksFooterRow implements FooterRawData {
     data: FooterRawDataElement[] = [
         {
             name: "Язык Reflex",
-            link: "/works/reflex"
+            link: "/works#reflex"
         },
         {
             name: "Язык Post",
-            link: "/works/post"
+            link: "/works#post"
         },
         {
             name: "Язык IndustrialC",
-            link: "/works/reflex"
+            link: "/works#industrial-c"
         },
         {
             name: "Инженерия требований и EDTL",
-            link: "/works/post"
+            link: "/works#requirements-engineering-and-edtl"
         },
         {
             name: "Верификация и отладка процесс-ориентированных программ",
-            link: "/works/reflex"
+            link: "/works#verification-and-debugging-of-process-oriented-programs"
         },
         {
             name: "Статический анализ процесс-ориентированных спецификаций",
-            link: "/works/post"
+            link: "/works#static-analysis-of-process-oriented-specifications"
         },
         {
             name: "webIDE и модули расширения",
-            link: "/works/reflex"
+            link: "/works#webide-and-extension-modules"
         },
         {
             name: "Стратегии планирования и балансировки",
-            link: "/works/post"
+            link: "/works#scheduling-and-balancing-strategies"
         },
         {
             name: "Распределенные микроконтроллерные системы",
-            link: "/works/post"
+            link: "/works#distributed-microcontroller-systems"
         }
     ]
 }
