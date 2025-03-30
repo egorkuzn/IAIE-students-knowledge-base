@@ -1,6 +1,6 @@
 import App from "../../../App";
 import {WorksClassModel} from "../../../model/pages/works/WorksClassModel";
-import {ReflexWorksClass, VerificationAndDebugPOPWorksClass} from "../../../data/pages/works/WorksClassesProperties";
+import {WORKS_DATA} from "../../../data/pages/works/WorksClassesProperties";
 import {WorkModel} from "../../../model/pages/works/WorkModel";
 import '../../../styles/pages/Works.scss';
 
@@ -9,16 +9,11 @@ export function WorksView(props: any) {
 }
 
 function page() {
-    let worksClasses: WorksClassModel[] = [
-        new ReflexWorksClass(),
-        new VerificationAndDebugPOPWorksClass()
-    ]
-
     return (
         <main>
             <div className="works-page">
                 <h1>Дипломные работы и диссертации</h1>
-                { worksClasses.map((worksClassModel: WorksClassModel) => {
+                {WORKS_DATA.map((worksClassModel: WorksClassModel) => {
                     return (
                         <div className="works-class">
                             <h2>{worksClassModel.title}</h2>
@@ -35,7 +30,7 @@ function page() {
                             })}
                         </div>
                     )
-                }) }
+                })}
             </div>
         </main>
     )

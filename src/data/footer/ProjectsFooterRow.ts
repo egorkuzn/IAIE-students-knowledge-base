@@ -4,23 +4,23 @@ import {FooterRawDataElement} from "../../model/footer/FooterRawDataElement";
 export class ProjectsFooterRow implements FooterRawData {
     data: FooterRawDataElement[] = [
         {
-            name: "Язык Reflex",
+            title: "Язык Reflex",
             link: "/projects#reflex"
         },
         {
-            name: "Язык Post",
+            title: "Язык Post",
             link: "/projects#post"
         },
         {
-            name: "Проект RIDE/Theia",
+            title: "Проект RIDE/Theia",
             link: "/projects#ride"
         },
         {
-            name: "Язык IndustrialC",
+            title: "Язык IndustrialC",
             link: "/projects#industrial-c"
         },
         {
-            name: "EDTL",
+            title: "EDTL",
             link: "/projects#edtl"
         }
     ]

@@ -1,4 +1,6 @@
-class Publications2023 implements PublicationClassModel {
+import {PublicationClassModel} from "../../../model/pages/publications/PublicationClassModel";
+
+class Publications2023 extends PublicationClassModel {
     year: number = 2023
     publications: PublicationModel[] = [
         {
@@ -52,7 +54,7 @@ class Publications2023 implements PublicationClassModel {
     ]
 }
 
-class Publications2022 implements PublicationClassModel {
+class Publications2022 extends PublicationClassModel {
     year: number = 2022
     publications: PublicationModel[] = [
         {
@@ -112,7 +114,7 @@ class Publications2022 implements PublicationClassModel {
     ]
 }
 
-class Publications2021 implements PublicationClassModel {
+class Publications2021 extends PublicationClassModel {
     year: number = 2021
     publications: PublicationModel[] = [
         {
@@ -190,7 +192,7 @@ class Publications2021 implements PublicationClassModel {
     ]
 }
 
-class Publications2020 implements PublicationClassModel {
+class Publications2020 extends PublicationClassModel {
     year: number = 2020
     publications: PublicationModel[] = [
         {
@@ -246,7 +248,7 @@ class Publications2020 implements PublicationClassModel {
 
 
 
-class Publications2019 implements PublicationClassModel {
+class Publications2019 extends PublicationClassModel {
     year: number = 2019
     publications: PublicationModel[] = [
         {
@@ -294,7 +296,7 @@ class Publications2019 implements PublicationClassModel {
     ]
 }
 
-export var Publications: PublicationClassModel[] = [
+export var PUBLICATIONS_DATA: PublicationClassModel[] = [
     new Publications2023(),
     new Publications2022(),
     new Publications2021(),

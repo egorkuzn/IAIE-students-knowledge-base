@@ -1,16 +1,10 @@
 import {WorksClassModel} from "../../../model/pages/works/WorksClassModel";
 import {WorkModel} from "../../../model/pages/works/WorkModel";
 
-export class ReflexWorksClass implements WorksClassModel {
-    get title(): string {
-        return this._title
-    }
-    get works(): WorkModel[] {
-        return this._works
-    }
-
-    private _title = "Язык Reflex"
-    private _works: WorkModel[] = [
+class ReflexWorksClass implements WorksClassModel {
+    title = "Язык Reflex"
+    link = "/works#reflex"
+    works: WorkModel[] = [
         {
             authors: "Бурдэ С. П., рук. Зюбин В. Е.",
             theme: "Разработка модуля генерации исполняемого кода для микроконтроллера ATmega по AST Reflex-программы",
@@ -34,16 +28,56 @@ export class ReflexWorksClass implements WorksClassModel {
     ]
 }
 
-export class VerificationAndDebugPOPWorksClass implements WorksClassModel {
-    get title(): string {
-        return this._title
-    }
-    get works(): WorkModel[] {
-        return this._works
-    }
+class PostWorksClass implements WorksClassModel {
+    title = "Язык poST"
+    link = "/works#post"
+    works: WorkModel[] = [
+        {
+            authors: "Башев В. И. , рук. Зюбин В. Е.",
+            theme: "Ядро web-IDE процесс-ориентированного языка poST",
+            published: "Выпускная квалификационная работа магистра, ФИТ НГУ, 2022, – 94 с.",
+        }
+    ];
+}
 
-    private _title = "Верификация и отладка процесс-ориентированных программ"
-    private _works: WorkModel[] = [
+class IndustrialCWorksClass implements WorksClassModel {
+    title = "Язык IndustrialC"
+    link = "/works#industrial-c"
+    works: WorkModel[] = [
+        {
+            authors: "Розов А. С. , рук. Зюбин В. Е.",
+            theme: "Разработка языковых и инструментальных средств процесс-ориентированного программирования для открытых микроконтроллерных платформ.",
+            published: "Диссертация на соискание ученой степени кандидата технических наук, 2019, – 127 с."
+        }
+    ]
+}
+
+class RequirementsEngineeringAndEDTL implements WorksClassModel {
+    title = "Инженерия требований и EDTL"
+    link = "/works#requirements-engineering-and-edtl"
+    works: WorkModel[] = [
+        {
+            authors: "Козлова, Анастасия Викторовна, рук. Гаранина Н. О.",
+            theme: "Разработка парсера EDTL-требований в абстрактное синтаксическое дерево.",
+            published: "Выпускная квалификационная работа бакалавра, ФИТ НГУ, 2022, – 56 с."
+        },
+        {
+            authors: "Гнездилова, Анна Владимировна, рук. Гаранина Н. О.",
+            theme: "Разработка алгоритма преобразования EDTL-спецификаций в требования на естественном языке.",
+            published: "Выпускная квалификационная работа бакалавра, ФИТ НГУ, 2022, – 38 с."
+        },
+        {
+            authors: "Гетманова, Анастасия Николаевна, рук. Гаранина Н. О.",
+            theme: "Разработка генератора LTL-формул из списка EDTL-требований",
+            published: "Выпускная квалификационная работа бакалавра, ФИТ НГУ, 2022, – 37 с."
+        }
+    ]
+}
+
+class VerificationAndDebugPOPWorksClass implements WorksClassModel {
+    title = "Верификация и отладка процесс-ориентированных программ"
+    link = "/works#verification-and-debugging-of-process-oriented-programs"
+    works: WorkModel[] = [
         {
             authors: "Ли К. А., рук. Зюбин В. Е.",
             theme: "Разработка модуля визуализации для облачного практикума по языку poST",
@@ -76,3 +110,89 @@ export class VerificationAndDebugPOPWorksClass implements WorksClassModel {
         },
     ]
 }
+
+class StaticAnalysisOfProcessOrientedSpecifications implements WorksClassModel {
+    title = "Статический анализ процесс-ориентированных спецификаций"
+    link = "/works#static-analysis-of-process-oriented-specifications"
+    works: WorkModel[] = [
+        {
+            authors: "Мартышкин Д. П., рук. Зюбин В. Е.",
+            theme: "Исследование статических методов определения алгоритмической сложности программ на языке poST.",
+            published: "Выпускная квалификационная работа бакалавра, ФИТ НГУ, 2024, – 86 с."
+        },
+        {
+            authors: "Абраменко А. А., рук. Зюбин В. Е.",
+            theme: "Разработка модуля визуализации структуры программ для webIDE языка poST.",
+            published: "Выпускная квалификационная работа магистра, ФИТ НГУ, 2023, – 39 с."
+        }
+    ]
+}
+
+class WebideAndExtensionModules implements WorksClassModel {
+    title = "webIDE и модули расширения"
+    link = "/works#webide-and-extension-modules"
+    works: WorkModel[] = [
+        {
+            authors: "Кузнецов Е. В., рук. Зюбин В. Е.",
+            theme: "Разработка модуля управления проектами для облачного IDE языка Reflex.",
+            published: "Выпускная квалификационная работа бакалавра, ФИТ НГУ, 2024, – 86 с."
+        },
+        {
+            authors: "Витченко В. А., рук. Зюбин В. Е.",
+            theme: "Унифицированная архитектура модуля расширения ядра Web-IDE процесс-ориентированного языка Reflex.",
+            published: "Выпускная квалификационная работа магистра, ФИТ НГУ, 2022, – 33 с."
+        },
+        {
+            authors: "Белоглазов, Даниил Александрович, рук. Зюбин В. Е.",
+            theme: "Исследование унифицированных архитектур и механизмов расширения ядра Web-IDE процесс-ориентированного языка poST.",
+            published: "Выпускная квалификационная работа бакалавра, ФИТ НГУ, 2022, – 66 с."
+        },
+        {
+            authors: "Витченко В. А., рук. Зюбин В. Е.",
+            theme: "РАЗРАБОТКА WYSIWYG РЕДАКТОРА ДЛЯ МОДУЛЯ ДИНАМИЧЕСКОЙ ВЕРИФИКАЦИИ ПРОЦЕСС-ОРИЕНТИРОВАННЫХ АЛГОРИТМОВ УПРАВЛЕНИЯ",
+            published: "Выпускная квалификационная работа магистра, ФИТ НГУ, 2020, – 53 с."
+        },
+    ];
+}
+
+class SchedulingAndBalancingStrategies implements WorksClassModel {
+    title = "Стратегии планирования и балансировки"
+    link = "/works#scheduling-and-balancing-strategies"
+    works: WorkModel[] = [
+        {
+            authors: "Пермяшкин Д. А., рук. Зюбин В. Е.",
+            theme: "Исследование механизмов балансировки загрузки в процесс-ориентированных языках программирования.",
+            published: "Выпускная квалификационная работа магистра, ФИТ НГУ, 2022, – 49 с."
+        }
+    ]
+}
+
+class DistributedMicrocontrollerSystems implements WorksClassModel {
+    title = "Распределенные микроконтроллерные системы"
+    link = "/works#distributed-microcontroller-systems"
+    works: WorkModel[] = [
+        {
+            authors: "Святкина В.А., рук. Зюбин В. Е.",
+            theme: "Разработка CAN-bus протокола прикладного уровня для создания распределённых микроконтроллерных систем управления.",
+            published: "Выпускная квалификационная работа бакалавра, ФФ НГУ, 2024, – 16 с."
+        },
+        {
+            authors: "Набиева М.А., рук. Зюбин В. Е.",
+            theme: "Разработка микроконтроллерного модуля управления тиристорами для распределенной системы управления установкой анодного оксидирования.",
+            published: "Выпускная квалификационная работа магистра, ФФ НГУ, 2024, – 56 с."
+        }
+    ]
+}
+
+export var WORKS_DATA: WorksClassModel[] = [
+    new ReflexWorksClass(),
+    new PostWorksClass(),
+    new IndustrialCWorksClass(),
+    new RequirementsEngineeringAndEDTL(),
+    new VerificationAndDebugPOPWorksClass(),
+    new StaticAnalysisOfProcessOrientedSpecifications(),
+    new WebideAndExtensionModules(),
+    new SchedulingAndBalancingStrategies(),
+    new DistributedMicrocontrollerSystems()
+]
+

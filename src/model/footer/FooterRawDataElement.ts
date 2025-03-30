@@ -1,4 +1,4 @@
 export interface FooterRawDataElement {
-    name: string
+    title: string
     link: string
 }
