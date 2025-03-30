@@ -7,13 +7,18 @@ import {router} from "../../../config/Router";
  */
 export class NavbarElement extends Component<NavbarElementProp> {
     getStyle(): string {
-        return (this.props.navbarStateValue.active === this.props.path) ? "nav-border-enable" : "nav-border-disable"
+        return (
+            (this.props.navbarStateValue.entered === this.props.path && this.props.navbarStateValue.entered !== "")
+            || (this.props.navbarStateValue.active === this.props.path && this.props.navbarStateValue.entered === "")
+        ) ?
+            "nav-border-enable"
+        : "nav-border-disable"
     }
 
     onComponentEnter() {
         this.props.onChange(
             {
-                active: this.props.path,
+                active: this.props.navbarStateValue.active,
                 pressed: this.props.navbarStateValue.pressed,
                 entered: this.props.path
             }
@@ -21,16 +26,15 @@ export class NavbarElement extends Component<NavbarElementProp> {
     }
 
     onComponentOut() {
-        let entered = this.props.navbarStateValue.entered
-        if (this.props.path === this.props.navbarStateValue.entered) entered = ""
-        let active = this.props.navbarStateValue.active
-        if (entered === "") active = this.props.navbarStateValue.pressed
+        if (this.props.navbarStateValue.entered === this.props.path) { this.props.navbarStateValue.entered = ""}
+
+        console.log(this.props.navbarStateValue.active)
 
         this.props.onChange(
             {
-                active: active,
+                active: this.props.navbarStateValue.active,
                 pressed: this.props.navbarStateValue.pressed,
-                entered: entered
+                entered: this.props.navbarStateValue.entered
             }
         )
     }

@@ -1,12 +1,12 @@
-import {createHashRouter} from "react-router";
 import {WorksView} from "../view/pages/works/WorksView";
 import {ProjectsView} from "../view/pages/projects/ProjectsView";
 import {VideoView} from "../view/pages/video/VideoView";
 import {PublicationsView} from "../view/pages/publications/PublicationsView";
 import {DocsView} from "../view/pages/docs/DocsView";
 import {Home} from "../view/pages/home/Home";
+import {createBrowserRouter} from "react-router";
 
-export const router = createHashRouter([
+export const router = createBrowserRouter([
     {
         path: "/",
         Component: Home,

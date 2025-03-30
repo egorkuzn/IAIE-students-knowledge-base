@@ -1,6 +1,3 @@
-.works-style {
-  color: black;
-}
 
 .works-page {
   padding-left: 2em;
@@ -24,4 +21,8 @@
 .work-published {
   font-weight: lighter;
   margin-top: 0;
+}
+
+.works-page h1, h2 {
+  color: black;
 }

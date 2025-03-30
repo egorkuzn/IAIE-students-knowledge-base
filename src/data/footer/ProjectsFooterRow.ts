@@ -1,27 +1,27 @@
-import {FooterRawData} from "../FooterRawData";
-import {FooterRawDataElement} from "../FooterRawDataElement";
+import {FooterRawData} from "../../model/footer/FooterRawData";
+import {FooterRawDataElement} from "../../model/footer/FooterRawDataElement";
 
 export class ProjectsFooterRow implements FooterRawData {
     data: FooterRawDataElement[] = [
         {
             name: "Язык Reflex",
-            link: "/projects/reflex"
+            link: "/projects#reflex"
         },
         {
             name: "Язык Post",
-            link: "/projects/post"
+            link: "/projects#post"
         },
         {
             name: "Проект RIDE/Theia",
-            link: "/projects/reflex"
+            link: "/projects#ride"
         },
         {
             name: "Язык IndustrialC",
-            link: "/projects/post"
+            link: "/projects#industrial-c"
         },
         {
             name: "EDTL",
-            link: "/projects/post"
+            link: "/projects#edtl"
         }
     ]
 }

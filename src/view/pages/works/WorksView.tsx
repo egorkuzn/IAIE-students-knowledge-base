@@ -1,6 +1,6 @@
 import App from "../../../App";
 import {WorksClassModel} from "../../../model/pages/works/WorksClassModel";
-import {ReflexWorksClass, VerificationAndDebugPOPWorksClass} from "../../../model/pages/works/WorksClassesProperties";
+import {ReflexWorksClass, VerificationAndDebugPOPWorksClass} from "../../../data/pages/works/WorksClassesProperties";
 import {WorkModel} from "../../../model/pages/works/WorkModel";
 import '../../../styles/pages/Works.scss';
 
@@ -17,11 +17,11 @@ function page() {
     return (
         <main>
             <div className="works-page">
-                <h1 className="works-style">Дипломные работы и диссертации</h1>
+                <h1>Дипломные работы и диссертации</h1>
                 { worksClasses.map((worksClassModel: WorksClassModel) => {
                     return (
                         <div className="works-class">
-                            <h2 className="works-style">{worksClassModel.title}</h2>
+                            <h2>{worksClassModel.title}</h2>
                             {worksClassModel.works.map((workModel: WorkModel) => {
                                 return (
                                     <div className="work">

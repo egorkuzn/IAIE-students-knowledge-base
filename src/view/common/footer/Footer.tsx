@@ -1,9 +1,9 @@
-import {MainFooterRow} from "../../../model/footer/properties/MainFooterRow";
-import {WorksFooterRow} from "../../../model/footer/properties/WorksFooterRow";
-import {DocsFooterRow} from "../../../model/footer/properties/DocsFooterRow";
-import {ProjectsFooterRow} from "../../../model/footer/properties/ProjectsFooterRow";
-import {PublicationsFooterRow} from "../../../model/footer/properties/PublicationsFooterRow";
-import {VideoFooterRow} from "../../../model/footer/properties/VideoFooterRow";
+import {MainFooterRow} from "../../../data/footer/MainFooterRow";
+import {WorksFooterRow} from "../../../data/footer/WorksFooterRow";
+import {DocsFooterRow} from "../../../data/footer/DocsFooterRow";
+import {ProjectsFooterRow} from "../../../data/footer/ProjectsFooterRow";
+import {PublicationsFooterRow} from "../../../data/footer/PublicationsFooterRow";
+import {VideoFooterRow} from "../../../data/footer/VideoFooterRow";
 import {FooterRow} from "./FooterRow";
 
 export function Footer (props: any) {

@@ -1,5 +1,5 @@
-import {WorksClassModel} from "./WorksClassModel";
-import {WorkModel} from "./WorkModel";
+import {WorksClassModel} from "../../../model/pages/works/WorksClassModel";
+import {WorkModel} from "../../../model/pages/works/WorkModel";
 
 export class ReflexWorksClass implements WorksClassModel {
     get title(): string {
