@@ -9,7 +9,7 @@ import {NavigationTree} from "../../../data/navbar/NavigationTree";
  */
 export class Navbar extends Component<{}, NavbarState> {
     location(): string {
-        return window.location.pathname.substring(1)
+        return window.location.pathname
     }
 
     state: NavbarState = {
