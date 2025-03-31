@@ -1,5 +1,5 @@
 import {Component} from "react";
-import {projectsList} from "../../../model/pages/projects/ProjectsProperties";
+import {PROJECTS_DATA} from "../../../data/pages/projects/ProjectsProperties";
 import {ProjectsListElem} from "./ProjectsListElem";
 import {ProjectsListViewState} from "../../../model/pages/projects/ProjectsListViewState";
 import '../../../styles/pages/Projects.scss';
@@ -12,13 +12,13 @@ export class ProjectsListView extends Component<any, ProjectsListViewState> {
     render() {
         return (
             <div className="projects-list">
-                {projectsList.map((it) => {
-                    let isActive = this.state.activeElem === it
+                {PROJECTS_DATA.map((it) => {
+                    let isActive = this.state.activeElem === it.name
 
                     return (<ProjectsListElem
                         isActive={isActive}
-                        name={it}
-                        link={it}
+                        name={it.name}
+                        link={it.link}
                     />)
                 })}
             </div>
