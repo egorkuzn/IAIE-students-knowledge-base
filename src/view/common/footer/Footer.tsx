@@ -9,12 +9,12 @@ import {FooterRow} from "./FooterRow";
 export function Footer (props: any) {
     return (
         <footer>
-            <FooterRow name = "Главная" rowData ={ new MainFooterRow() }/>
-            <FooterRow name = "Дипломные работы и диссертации" rowData = { new WorksFooterRow() }/>
-            <FooterRow name = "Документация и инструкции" rowData = { new DocsFooterRow() }/>
-            <FooterRow name = "Проекты" rowData = { new ProjectsFooterRow() }/>
-            <FooterRow name = "Публикации" rowData = { new PublicationsFooterRow() }/>
-            <FooterRow name = "Видео" rowData = { new VideoFooterRow() }/>
+            <FooterRow name = "Главная" pathname="/home" rowData ={ new MainFooterRow() }/>
+            <FooterRow name = "Дипломные работы и диссертации" pathname="/works" rowData = { new WorksFooterRow() }/>
+            <FooterRow name = "Документация и инструкции" pathname="/docs" rowData = { new DocsFooterRow() }/>
+            <FooterRow name = "Проекты" pathname="/projects" rowData = { new ProjectsFooterRow() }/>
+            <FooterRow name = "Публикации" pathname="/publications" rowData = { new PublicationsFooterRow() }/>
+            <FooterRow name = "Видео" pathname="/video" rowData = { new VideoFooterRow() }/>
         </footer>
     )
 }

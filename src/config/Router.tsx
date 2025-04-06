@@ -34,5 +34,12 @@ export const router = createBrowserRouter([
     {
         path: "/video",
         Component: VideoView
+    },
+    {
+        path: "*",
+        Component: () => {
+            window.location.href = "https://www.iae.nsk.su/ru/laboratory-sites/lab-19"
+            return null
+        }
     }
 ]);

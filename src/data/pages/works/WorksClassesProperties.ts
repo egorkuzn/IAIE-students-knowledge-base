@@ -3,7 +3,7 @@ import {WorkModel} from "../../../model/pages/works/WorkModel";
 
 class ReflexWorksClass implements WorksClassModel {
     title = "Язык Reflex"
-    link = "/works#reflex"
+    hash = "reflex"
     works: WorkModel[] = [
         {
             authors: "Бурдэ С. П., рук. Зюбин В. Е.",
@@ -30,7 +30,7 @@ class ReflexWorksClass implements WorksClassModel {
 
 class PostWorksClass implements WorksClassModel {
     title = "Язык poST"
-    link = "/works#post"
+    hash = "post"
     works: WorkModel[] = [
         {
             authors: "Башев В. И. , рук. Зюбин В. Е.",
@@ -42,7 +42,7 @@ class PostWorksClass implements WorksClassModel {
 
 class IndustrialCWorksClass implements WorksClassModel {
     title = "Язык IndustrialC"
-    link = "/works#industrial-c"
+    hash = "industrial-c"
     works: WorkModel[] = [
         {
             authors: "Розов А. С. , рук. Зюбин В. Е.",
@@ -54,7 +54,7 @@ class IndustrialCWorksClass implements WorksClassModel {
 
 class RequirementsEngineeringAndEDTL implements WorksClassModel {
     title = "Инженерия требований и EDTL"
-    link = "/works#requirements-engineering-and-edtl"
+    hash = "requirements-engineering-and-edtl"
     works: WorkModel[] = [
         {
             authors: "Козлова, Анастасия Викторовна, рук. Гаранина Н. О.",
@@ -76,7 +76,7 @@ class RequirementsEngineeringAndEDTL implements WorksClassModel {
 
 class VerificationAndDebugPOPWorksClass implements WorksClassModel {
     title = "Верификация и отладка процесс-ориентированных программ"
-    link = "/works#verification-and-debugging-of-process-oriented-programs"
+    hash = "verification-and-debugging-of-process-oriented-programs"
     works: WorkModel[] = [
         {
             authors: "Ли К. А., рук. Зюбин В. Е.",
@@ -113,7 +113,7 @@ class VerificationAndDebugPOPWorksClass implements WorksClassModel {
 
 class StaticAnalysisOfProcessOrientedSpecifications implements WorksClassModel {
     title = "Статический анализ процесс-ориентированных спецификаций"
-    link = "/works#static-analysis-of-process-oriented-specifications"
+    hash = "static-analysis-of-process-oriented-specifications"
     works: WorkModel[] = [
         {
             authors: "Мартышкин Д. П., рук. Зюбин В. Е.",
@@ -130,7 +130,7 @@ class StaticAnalysisOfProcessOrientedSpecifications implements WorksClassModel {
 
 class WebideAndExtensionModules implements WorksClassModel {
     title = "webIDE и модули расширения"
-    link = "/works#webide-and-extension-modules"
+    hash = "webide-and-extension-modules"
     works: WorkModel[] = [
         {
             authors: "Кузнецов Е. В., рук. Зюбин В. Е.",
@@ -157,7 +157,7 @@ class WebideAndExtensionModules implements WorksClassModel {
 
 class SchedulingAndBalancingStrategies implements WorksClassModel {
     title = "Стратегии планирования и балансировки"
-    link = "/works#scheduling-and-balancing-strategies"
+    hash = "scheduling-and-balancing-strategies"
     works: WorkModel[] = [
         {
             authors: "Пермяшкин Д. А., рук. Зюбин В. Е.",
@@ -169,7 +169,7 @@ class SchedulingAndBalancingStrategies implements WorksClassModel {
 
 class DistributedMicrocontrollerSystems implements WorksClassModel {
     title = "Распределенные микроконтроллерные системы"
-    link = "/works#distributed-microcontroller-systems"
+    hash = "distributed-microcontroller-systems"
     works: WorkModel[] = [
         {
             authors: "Святкина В.А., рук. Зюбин В. Е.",

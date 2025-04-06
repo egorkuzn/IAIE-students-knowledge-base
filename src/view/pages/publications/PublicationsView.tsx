@@ -2,6 +2,7 @@ import App from "../../../App";
 import '../../../styles/pages/Publications.scss';
 import {PUBLICATIONS_DATA} from "../../../data/pages/publications/PublicationsClassProperties";
 import {JSX} from "react";
+import {Link} from "react-router";
 
 export function PublicationsView(props: any) {
     return (

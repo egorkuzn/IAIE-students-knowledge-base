@@ -5,23 +5,23 @@ export class ProjectsFooterRow implements FooterRawData {
     data: FooterRawDataElement[] = [
         {
             title: "Язык Reflex",
-            link: "/projects#reflex"
+            hash: "reflex"
         },
         {
             title: "Язык Post",
-            link: "/projects#post"
+            hash: "post"
         },
         {
             title: "Проект RIDE/Theia",
-            link: "/projects#ride"
+            hash: "ride"
         },
         {
             title: "Язык IndustrialC",
-            link: "/projects#industrial-c"
+            hash: "industrial-c"
         },
         {
             title: "EDTL",
-            link: "/projects#edtl"
+            hash: "edtl"
         }
     ]
 }

@@ -8,7 +8,7 @@ export abstract class PublicationClassModel implements FooterRawDataElement {
         return this.year.toString()
     }
 
-    get link() {
-        return `/publications#${this.year.toString()}`
+    get hash() {
+        return this.year.toString()
     }
 }
