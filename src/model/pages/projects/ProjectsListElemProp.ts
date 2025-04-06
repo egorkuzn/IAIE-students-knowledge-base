@@ -1,5 +1,5 @@
 export interface ProjectsListElemProp {
     name: string
-    isActive: boolean
-    link: string
+    link: string,
+    onChange: (state: Boolean) => void
 }

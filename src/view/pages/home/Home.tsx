@@ -1,6 +1,5 @@
 import App from "../../../App";
 import '../../../styles/pages/Home.scss';
-import video from '../../../styles/pages/background-video.mp4'
 
 export function Home(props: any) {
     return (
@@ -12,9 +11,6 @@ function page() {
     return (
         <main>
             <div className="content">
-                <video autoPlay muted loop id="backgroundVideo">
-                    <source src={video} type={"video/mp4"}/>
-                </video>
                 <div className="home">
                     <div className="text-block">
                         <h1>Процесс-ориентированное программирование – </h1>

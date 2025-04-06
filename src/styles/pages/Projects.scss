@@ -2,55 +2,75 @@
   text-decoration: underline;
 }
 
-.no-active {
-
+.projects {
+  overflow: hidden;
+  background: linear-gradient(to bottom right, rgba(0, 29, 177, 0.96), rgba(0, 0, 177, 0.31), rgba(0, 0, 177, 0.58));
+  background-size: 400% 400%;
+  animation: gradient-projects 5s ease infinite;
 }
 
-.projects {
-  width: 100%;
-  padding-left: 2em;
+@keyframes gradient-projects {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.projects h1 {
+  padding-left: 1em;
 }
 
 .projects-list {
-  display: flow;
-  height: 100%;
-  width: max-content;
-}
-
-/* Underline From Left */
-.projects-list h2 {
-  width: fit-content;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
   overflow: hidden;
 }
 
-.projects-list h2:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 100%;
-  bottom: 0;
-  background: #000000;
-  height: 4px;
-  -webkit-transition-property: right;
-  transition-property: right;
-  -webkit-transition-duration: 0.3s;
+@media (width >= 640px) {
+  .projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .projects-list-elem {
+    display: block;
+    height: 400px;
+    overflow: hidden;
+  }
+}
+
+.projects-list-elem {
+  display: block;
+  height: 400px;
+  overflow: hidden;
+}
+
+.projects-list-elem img {
+  opacity: 50%;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: translateZ(0);
   transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
+}
+
+.projects-list-elem img:hover, img:focus, img:active {
+  transform: scale(110%);
+  opacity: 70%;
+  transition-duration: 0.5s;
   transition-timing-function: ease-out;
 }
 
-.projects-list h2:hover:before, h2:focus:before, h2:active:before {
-  right: 0;
-}
-
-.projects-list a {
-  color: inherit;
-  text-decoration: none;
+.projects-list h1 {
+  color: black;
+  z-index: 1;
+  width: 100%;
+  padding-left: 1em;
+  position: absolute;
+  overflow: hidden;
 }
 
