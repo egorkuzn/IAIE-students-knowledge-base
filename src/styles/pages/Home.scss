@@ -33,3 +33,25 @@
 .text-block h2 {
   color: antiquewhite;
 }
+
+/* Rotator animation */
+.rotator {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.rotator-enter {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.rotator-stay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.rotator-exit {
+  opacity: 0;
+  transform: translateY(-8px);
+}
