@@ -1,4 +1,4 @@
-import {Component} from "react";
+import React, {Component} from "react";
 import {ProjectsListElemProp} from "../../../model/pages/projects/ProjectsListElemProp";
 import {Link} from "react-router";
 import {ProjectsListElemState} from "../../../model/pages/projects/ProjectsListElemState";
