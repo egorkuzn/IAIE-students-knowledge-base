@@ -5,7 +5,7 @@ export function RotatingText(
     {
         messages: messagesProp,
         enterMs = 400,
-        stayMs = 2600,
+        stayMs = 8000,
         exitMs = 400,
         className = '',
     }: RotatingTextProps

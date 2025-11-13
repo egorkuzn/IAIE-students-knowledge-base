@@ -1,11 +1,11 @@
 @import "Navbar";
 
-$light-blue: #9D9DD2;
+$dark-blue: #000039;
 
 @media(width >= 650px) {
   footer {
-    background-color: $light-blue;
-    color: $app-blue;
+    background-color: $dark-blue;
+    color: white;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto;
@@ -15,8 +15,8 @@ $light-blue: #9D9DD2;
 
 @media(width < 650px) {
   footer {
-    background-color: $light-blue;
-    color: $app-blue;
+    background-color: $dark-blue;
+    color: white;
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: auto;
