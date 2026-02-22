@@ -6,11 +6,11 @@ import {FooterContactsRowView} from "./FooterContactsRowView";
 
 export function Footer (props: any) {
     return (
-        <footer>
+        <div className="Footer">
             <FooterRow name = "Проекты" pathname="/projects" rowData = { new ProjectsFooterRow() }/>
             <FooterRow name = "Дипломные работы и диссертации" pathname="/works" rowData = { new WorksFooterRow() }/>
             <FooterRow name = "Публикации" pathname="/publications" rowData = { new PublicationsFooterRow() }/>
             <FooterContactsRowView/>
-        </footer>
+        </div>
     )
 }
