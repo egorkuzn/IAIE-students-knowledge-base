@@ -1,4 +1,8 @@
 import industrialCImg from "../../../images/pages/projects/industrial-c.jpg"
+import reflexImg from "../../../images/pages/projects/reflex.jpg"
+import postImg from "../../../images/pages/projects/post.jpg"
+import edtlImg from "../../../images/pages/projects/edtl.jpg"
+import rideImg from "../../../images/pages/projects/ride.jpg"
 
 export const PROJECTS_DATA: ProjectModel[] = [
     {
@@ -24,9 +28,9 @@ export const PROJECTS_DATA: ProjectModel[] = [
 ]
 
 export const PROJECTS_IMAGES: {[index: string]: string} = {
-    reflex: require("../../../images/pages/projects/reflex.jpg"),
-    post: require("../../../images/pages/projects/post.jpg"),
-    "industrial-c": require("../../../images/pages/projects/industrial-c.jpg"),
-    edtl: require("../../../images/pages/projects/edtl.jpg"),
-    ride: require("../../../images/pages/projects/ride.jpg")
+    reflex: reflexImg,
+    post: postImg,
+    "industrial-c": industrialCImg,
+    edtl: edtlImg,
+    ride: rideImg
 }

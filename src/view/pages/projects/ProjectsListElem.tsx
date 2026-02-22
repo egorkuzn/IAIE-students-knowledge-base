@@ -8,13 +8,9 @@ export class ProjectsListElem extends Component<ProjectsListElemProp, ProjectsLi
     render() {
         return (
             <Link to={{pathname: this.props.link}}>
-                <div style={{"--background-image": `url(${PROJECTS_IMAGES[this.props.link]})`} as React.CSSProperties}
-                     className="projects-list-elem">
-                <h1
-                    onMouseEnter={(_) => { this.props.onChange(true)}}
-                    onMouseOut={(_) => { this.props.onChange(false)}}
-                    >
-                    {this.props.name}</h1>
+                <div className="projects-list-elem">
+                    <div className="projects-list-elem-image" style={{backgroundImage: `url(${PROJECTS_IMAGES[this.props.link]})`}}></div>
+                    <div> {this.props.name}</div>
                 </div>
             </Link>
         );

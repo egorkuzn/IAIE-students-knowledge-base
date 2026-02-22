@@ -20,6 +20,7 @@
     "sass": "^1.82.0"
   },
   "scripts": {
+    "clean": "rimraf node_modules && build && npm cache clean --force",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
