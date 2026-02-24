@@ -1,4 +1,5 @@
 import {PublicationClassModel} from "../../../model/pages/publications/PublicationClassModel";
+import type { PublicationModel } from "../../../model/pages/publications/PublicationModel";
 
 class Publications2023 extends PublicationClassModel {
     year: number = 2023
@@ -209,7 +210,7 @@ class Publications2020 extends PublicationClassModel {
         },
         {
             authors: "Garanina N., Anureev I., Sidorova E., Koznov D., Zyubin V., Gorlatch S.",
-            theme: "An Ontology-Based Approach to Support Formal Verification of Concurrent Systems.",
+            theme: "An Ontology-Based BodyViewroach to Support Formal Verification of Concurrent Systems.",
             published: "In: Sekerinski E. et al. (eds) Formal Methods. FM 2019 International Workshops. FM 2019. Lecture Notes in Computer Science, vol 12232. Springer, Cham.",
             link: "https://doi.org/10.1007/978-3-030-54994-7_9"
         },

@@ -1,11 +1,11 @@
-import App from "../../../App";
-import {WorksClassModel} from "../../../model/pages/works/WorksClassModel";
+import BodyView from "../BodyView";
+import type {WorksClassModel} from "../../../model/pages/works/WorksClassModel";
 import {WORKS_DATA} from "../../../data/pages/works/WorksClassesProperties";
-import {WorkModel} from "../../../model/pages/works/WorkModel";
+import type {WorkModel} from "../../../model/pages/works/WorkModel";
 import '../../../styles/pages/Works.scss';
 
-export function WorksView(props: any) {
-    return (App(page()))
+export function WorksView() {
+return (BodyView(page()))
 }
 
 function page() {

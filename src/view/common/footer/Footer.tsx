@@ -4,7 +4,7 @@ import {PublicationsFooterRow} from "../../../data/footer/PublicationsFooterRow"
 import {FooterRow} from "./FooterRow";
 import {FooterContactsRowView} from "./FooterContactsRowView";
 
-export function Footer (props: any) {
+export function Footer () {
     return (
         <div className="Footer">
             <FooterRow name = "Проекты" pathname="/projects" rowData = { new ProjectsFooterRow() }/>
