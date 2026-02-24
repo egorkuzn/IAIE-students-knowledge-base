@@ -1,12 +1,12 @@
-import App from "../../../App";
+import BodyView from "../BodyView";
 import '../../../styles/pages/Publications.scss';
 import {PUBLICATIONS_DATA} from "../../../data/pages/publications/PublicationsClassProperties";
-import {JSX} from "react";
-import {Link} from "react-router";
+import type { PublicationModel } from "../../../model/pages/publications/PublicationModel";
+import type { JSX } from "react";
 
-export function PublicationsView(props: any) {
+export function PublicationsView() {
     return (
-        App(page())
+        BodyView(page())
     )
 }
 

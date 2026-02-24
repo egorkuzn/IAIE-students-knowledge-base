@@ -1,4 +1,4 @@
-interface PublicationModel {
+export interface PublicationModel {
     authors: string
     theme: string
     published: string,

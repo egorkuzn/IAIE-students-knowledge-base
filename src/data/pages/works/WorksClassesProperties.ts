@@ -1,5 +1,5 @@
-import {WorksClassModel} from "../../../model/pages/works/WorksClassModel";
-import {WorkModel} from "../../../model/pages/works/WorkModel";
+import type { WorksClassModel } from "../../../model/pages/works/WorksClassModel";
+import type {WorkModel} from "../../../model/pages/works/WorkModel";
 
 class ReflexWorksClass implements WorksClassModel {
     title = "Язык Reflex"
